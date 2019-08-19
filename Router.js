@@ -3,9 +3,12 @@ import {Switch,Route} from 'react-router-dom'
 import HomePage from './components/HomePage'
 
 const Router=()=>{
-  <Switch>
+  return(
+     <Switch>
     <Route exact path='/' component={HomePage}/>
   </Switch>
+  )
+ 
 }
 
 export default Router;
