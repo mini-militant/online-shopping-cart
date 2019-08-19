@@ -10,7 +10,7 @@ import store from './Redux/store'
 render(
   <Provider store={store}>
   <BrowserRouter>
-  <App />
+    <App />
   </BrowserRouter> 
   </Provider>
   , document.getElementById('root'));
