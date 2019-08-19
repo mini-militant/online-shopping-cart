@@ -10,7 +10,10 @@ function ProductListItem(props){
         src={props.product.image}
       />
       <div>{props.product.description}</div>
-
+      <div>${props.product.price}</div>
+      <div>
+        <button>Add To Cart </button>
+      </div>
     </div>
   )
 }
