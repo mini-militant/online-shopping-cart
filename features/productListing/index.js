@@ -7,9 +7,9 @@ export default function ProductListing(props){
     <p>ProductListing</p>
     {console.log(props.products[0].name)}    
     {
-      props.products.map(product=>{
+      props.products.map(product=>(
         <ProductListItem  product={product}/>
-      })
+      ))
     }   
     </div>
   )
