@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function ProductListItem(props){
+function ProductListItem(props){
   return(
     <div>
-    <p>ssfsdfs</p>
+    <p>ProductList Item has spoken.</p>
     {console.log("hi from product list item")}
       <p>{props.product.name}</p>
     </div>
   )
 }
+
+export default ProductListItem

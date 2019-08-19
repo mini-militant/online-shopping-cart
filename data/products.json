@@ -16,6 +16,23 @@
         "+"
       ],
       "price":19.99
+    },
+    {
+      "id":2,
+      "name":"I am Groot",
+      "description" : "This stuffed groot makes an excellent toy for both youngsters due to its soft nature and adorable design, to fans and collectors of 'The Guardians of the Galaxy' franchise.",
+      "keywords":[
+        "stuffed",
+        "plush",
+        "groot",
+        "guardians of the galaxy"
+      ],
+      "image":"https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjSns6h5I7kAhXSe30KHeOTALkQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.amazon.com%2FHot-Toys-Marvel-Guardians-Life-Size%2Fdp%2FB07257N92P&psig=AOvVaw3a854xLZQSuWUsiALOOpyZ&ust=1566298904207314",
+      "age":[
+        "0",
+        "+"
+      ],
+      "price":19.99
     }
     
   ]
