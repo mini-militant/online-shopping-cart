@@ -18,7 +18,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="page-container">
         <Navigation/>
         <Router/>
       </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import ProductListItem from './productListItem'
+import {connect} from 'react-redux'
 
-export default function ProductListing(props){
+function ProductListing(props){
   return(
-    <div>
-    <p>ProductListing</p>
+    <div className ="product-listing">
+    
     {console.log(props.products[0].name)}    
     {
       props.products.map(product=>(
@@ -14,3 +15,22 @@ export default function ProductListing(props){
     </div>
   )
 }
+
+const mapStateToProps=(state)=>{
+  return {
+    cart:state.cart
+  }
+}
+
+const mapDispatchToProps=(dispatch)=>{
+  return{
+    addToCart:(item)=>{
+      dispatch({type:'ADD', payload:item})
+    },
+    removeFromCart:(item)=>{
+      dispatch({type:'REMOVE',payload:item})
+    }
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProductListing)
