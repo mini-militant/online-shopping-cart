@@ -9,7 +9,9 @@ function ProductListing(props){
     {console.log(props.products[0].name)}    
     {
       props.products.map(product=>(
-        <ProductListItem  product={product}/>
+        <ProductListItem  
+        addToCart={props.addToCart}
+        product={product}/>
       ))
     }   
     </div>

@@ -1,6 +1,9 @@
 import React from 'react'
 
+
+
 function ProductListItem(props){
+  
   return(
     <div className="product-list-item">
       <h1>{props.product.name}</h1>
@@ -12,7 +15,7 @@ function ProductListItem(props){
       <div>{props.product.description}</div>
       <div>${props.product.price}</div>
       <div>
-        <button>Add To Cart </button>
+        <button onClick={()=>props.addToCart(props.product)}>Add To Cart </button>
       </div>
     </div>
   )
