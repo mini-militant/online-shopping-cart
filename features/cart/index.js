@@ -8,6 +8,7 @@ export const cartItemsWithQuantity = (cartItems) =>{
     filteredItem!==undefined
       ? filteredItem.quantity++
       : acc.push({...item,quantity:1})
+    return acc
   },[])
 }
 

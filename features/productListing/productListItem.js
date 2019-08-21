@@ -3,6 +3,7 @@ import React from 'react'
 
 
 function ProductListItem(props){
+ 
   const thisItemInCart = props.cart.filter(item=> item.id === props.product.id)[0]
   return(
     <div className="product-list-item">
